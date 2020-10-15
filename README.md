@@ -1,5 +1,5 @@
 <h1 align = "center">
-  <img src = "" width = "150">
+  <img src = "sispac.png" width = "150">
 <br>
 <br>
 Sistema para agendamento de palestras, atividades e cursos
