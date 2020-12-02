@@ -12,12 +12,12 @@ public class ConnectDb {
 		public ConnectDb(String sql) {
 			try {
 				Class.forName("org.postgresql.Driver");
-				this.connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/sispac","postgres","1234");
+				this.connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Projeto","postgres","92787414");
 							
 				if(this.connection != null) {
-					System.out.println("connection ok");
+					System.out.println("connection okay");
 				}else {
-					System.out.println("connection failed");
+					System.err.println("connection failed");
 				}
 				
 				
@@ -25,7 +25,7 @@ public class ConnectDb {
 				
 
 			}catch(Exception e) {
-				System.out.println(e);
+				System.err.println(e);
 				
 			}
 		}

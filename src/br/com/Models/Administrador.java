@@ -6,8 +6,8 @@ public class Administrador {
 	private String nome;
 	private String email;
 	
+	
 	public Administrador(String cnpj, String senha, String nome, String email) {
-		super();
 		this.cnpj = cnpj;
 		this.senha = senha;
 		this.nome = nome;
