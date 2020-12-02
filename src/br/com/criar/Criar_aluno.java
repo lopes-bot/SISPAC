@@ -8,7 +8,7 @@ public class Criar_aluno {
 	
 	public Criar_aluno() {
 		String sql = "INSERT INTO aluno(cpf,senha,nome,email) VALUES(?,?,?,?)";	
-		Aluno alu = new Aluno("79845054","1234","jose","vaicerto@gmail.com");
+		Aluno alu = new Aluno("79848797","1234","jose","vaicerto@gmail.com");
 		ConnectDb con = new ConnectDb(sql);
 		
 		PreparedStatement ps = con.getPs();
