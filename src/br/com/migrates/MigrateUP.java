@@ -1,4 +1,4 @@
-package migrates;
+package br.com.migrates;
 
 import br.com.Dbconnect.Migrate;
 
