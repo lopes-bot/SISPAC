@@ -1,9 +1,11 @@
-import br.com.criar.*;
+
+import migrates.MigrateUP;
 
 
 public class Sispac {
 	public static void main(String[] ags) {
-		Migrate migrates = new Migrate();
+		MigrateUP migrates = new MigrateUP();
+		//MigrateDown migrates = new MigrateDown();
 	}
 
 }
