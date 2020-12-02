@@ -24,7 +24,7 @@ public class MigrateUP {
 			+ ");";
 	private String EventoCreate ="CREATE TABLE evento(\n"
 			+ "    id_evento serial,\n"
-			+ "    CargaHoraria INTEGER default 1 not null,\n"
+			+ "    CargaHoraria VARCHAR(10) not null,\n"
 			+ "    NomeEvento VARCHAR(100) not null,\n"
 			+ "    endereco VARCHAR(100) default 'Local não informado' not null,\n"
 			+ "    HoraInicio TIME not null,\n"
@@ -38,7 +38,7 @@ public class MigrateUP {
 	private String SubeventoCreate = "CREATE TABLE subevento(\n"
 			+ "    id_subevento serial,\n"
 			+ "    id_evento serial,\n"
-			+ "    CargaHoraria INTEGER default '1' not null,\n"
+			+ "    CargaHoraria VARCHAR(10) not null,\n"
 			+ "    NomeSubevento VARCHAR(100) not null,\n"
 			+ "    endereco VARCHAR(100) default 'Local não informado' not null,\n"
 			+ "    HoraInicio TIME not null,\n"

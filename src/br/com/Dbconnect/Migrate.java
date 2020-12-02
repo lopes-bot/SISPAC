@@ -10,6 +10,7 @@ public class Migrate {
 			PreparedStatement ps = db.getPs();
 			ps.execute();
 			System.out.println(" Migrate successfully");
+			ps.close();
 		}catch(Exception e) {
 			System.out.println(e);
 		}
