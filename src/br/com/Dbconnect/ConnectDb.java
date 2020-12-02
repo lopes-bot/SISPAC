@@ -1,12 +1,12 @@
-package com.sispacdb;
+package br.com.Dbconnect;
 
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
+//import java.sql.SQLException;
 
-import com.Models.Administrador;
+import br.com.Models.Administrador;
 
 public class ConnectDb {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.Atualizar;
+package br.com.Atualizar;
 
 public class Atualizar_evento {
 

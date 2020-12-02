@@ -1,4 +1,4 @@
-package com.Models;
+package br.com.Models;
 
 public class Administrador {
 	private String cnpj;

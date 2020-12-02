@@ -1,4 +1,4 @@
-package com.criar;
+package br.com.criar;
 
 public class Criar_subevento {
 
