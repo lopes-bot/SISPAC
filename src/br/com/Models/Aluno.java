@@ -37,4 +37,8 @@ public class Aluno {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+	@Override
+	public String toString() {
+		return "Aluno [cpf=" + cpf + ", nome=" + nome + ", email=" + email + ", senha=" + senha + "]";
+	}
 }
