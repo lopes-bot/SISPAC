@@ -3,6 +3,7 @@ package br.com.views;
 import br.com.migrates.*;
 import br.com.editar.*;
 import br.com.criar.*;
+import br.com.delete.*;
 
 public class Sispac {
 	public static void main(String[] ags) {
@@ -59,6 +60,12 @@ public class Sispac {
 		//s.EditarNome("super poderes");
 		//s.EditarVagas("3");
 		//s.EditarData("10/01/2021");
+		
+		//Delete_admin d1 = new Delete_admin(1);
+		//Delete_aluno d2 = new Delete_aluno(1);
+		//Delete_evento d3 = new Delete_evento(1);
+		//Delete_palestrante d5 = new Delete_palestrante(1);
+		
 	}
 
 }
