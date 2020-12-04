@@ -40,16 +40,16 @@ public class Sispac {
 		//p.EditarTelefone("3422-8446");
 		
 		
-		//Editar_evento edEv = new Editar_evento(1);//necessario passar p id_evento
-		//edEv.EditarCargaHoraria("500");
-		//edEv.EditarNome("maratona");
-		//edEv.EditarEndereco("avenida Brasil");
-		//edEv.EditarHoraInicio("20:00");
-		//edEv.EditarHoraTermino("21:00");
-		//edEv.EditarDataInicio("14/05/2022");
-		//edEv.EditarDataTermino("15/05/2022");
-		//edEv.EditarArea("humanas");
-		//edEv.EditarVagas("0");
+		Editar_evento ev = new Editar_evento(1);//necessario passar p id_evento
+		//ev.EditarCargaHoraria("200");
+		//ev.EditarNome("olimpiada de fisica");
+		//ev.EditarEndereco("Iracema - ce");
+		//ev.EditarHoraInicio("09:00");
+		//ev.EditarHoraTermino("13:00");
+		//ev.EditarDataInicio("20/08/2020");
+		//ev.EditarDataTermino("05/09/2020");
+		//ev.EditarArea("Biologicas");
+		ev.EditarVagas("110");
 	}
 
 }
