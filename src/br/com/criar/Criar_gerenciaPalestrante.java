@@ -20,8 +20,7 @@ public class Criar_gerenciaPalestrante {
 				ps.setInt(2, pale.getId_palestrante());
 				ps.execute();
 				ps.close();
-				System.out.println(sql);
-				System.out.println(pale);
+				
 			}catch(Exception e) {
 				
 			System.out.println(e);

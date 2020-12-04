@@ -21,8 +21,7 @@ public class Criar_palestrante {
 				ps.setString(4, pale.getTelefone());
 				ps.execute();
 				ps.close();
-				System.out.println(sql);
-				System.out.println(pale);
+				
 			}catch(Exception e) {
 				
 			System.out.println(e);

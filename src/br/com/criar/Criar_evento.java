@@ -29,8 +29,7 @@ public class Criar_evento {
 				ps.setString(10, ev.getVagas());
 				ps.execute();
 				ps.close();
-				System.out.println(sql);
-				System.out.println(ev);
+				
 			}catch(Exception e) {
 				System.out.println(e);
 			}

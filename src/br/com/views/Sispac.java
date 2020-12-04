@@ -23,13 +23,12 @@ public class Sispac {
 		//gerencia palestrante tem que ser criado  depois de subevento e palestrante
 		//Criar_gerenciaPalestrante gp = new Criar_gerenciaPalestrante(1,1);
 
-		//Criar_admin ad = new Criar_admin();
-		//Criar_evento ev = new Criar_evento();
-		//Criar_aluno al = new Criar_aluno(1,"00547847646","joao","Ljosos@gmail","a23re");
-		//Editar_admin ed1 = new Editar_admin();
+		Editar_admin ed1 = new Editar_admin(1);//necessario passar o id_admin
+		//ed1.EditarAdminEmail("testamdo@hotmail.com");
+		//ed1.EditarAdminSenha("andresenha");
+		ed1.EditarAdminNome("corno da silva");
 		//Editar_aluno ed2 = new Editar_aluno();
-		//Criar_evento ev = new Criar_evento();
-		//Criar_subevento sub = new Criar_subevento();
+		
 
 
 	}
