@@ -1,7 +1,7 @@
 package br.com.Models;
 
-
 public class Evento {
+	private int id_evento;
 	private String nomeEvento;
 	private String endereco;
 	private String dataAbertura;
@@ -12,9 +12,10 @@ public class Evento {
 	private String vagas;
 	private String cargaHoraria;
 	
-	public Evento(String nomeEvento, String endereco, String dataAbertura, String dataEncerra, String horaInicio,
-			String horaFim, String area, String vagas, String cargaHoraria) {
-		
+	public Evento(int id_evento, String nomeEvento, String endereco, String dataAbertura, String dataEncerra,
+			String horaInicio, String horaFim, String area, String vagas, String cargaHoraria) {
+		super();
+		this.id_evento = id_evento;
 		this.nomeEvento = nomeEvento;
 		this.endereco = endereco;
 		this.dataAbertura = dataAbertura;
@@ -24,9 +25,14 @@ public class Evento {
 		this.area = area;
 		this.vagas = vagas;
 		this.cargaHoraria = cargaHoraria;
-		
-		
-		
+	}
+
+	public int getId_evento() {
+		return id_evento;
+	}
+
+	public void setId_evento(int id_evento) {
+		this.id_evento = id_evento;
 	}
 
 	public String getNomeEvento() {
@@ -50,7 +56,7 @@ public class Evento {
 	}
 
 	public void setDataAbertura(String dataAbertura) {
-		this.dataAbertura =dataAbertura;
+		this.dataAbertura = dataAbertura;
 	}
 
 	public String getDataEncerra() {
@@ -100,8 +106,15 @@ public class Evento {
 	public void setCargaHoraria(String cargaHoraria) {
 		this.cargaHoraria = cargaHoraria;
 	}
-				
-	
+
+	@Override
+	public String toString() {
+		return "Evento [id_evento=" + id_evento + ", nomeEvento=" + nomeEvento + ", endereco=" + endereco
+				+ ", dataAbertura=" + dataAbertura + ", dataEncerra=" + dataEncerra + ", horaInicio=" + horaInicio
+				+ ", horaFim=" + horaFim + ", area=" + area + ", vagas=" + vagas + ", cargaHoraria=" + cargaHoraria
+				+ "]";
+	}
+		
 }
 
 

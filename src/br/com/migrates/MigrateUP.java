@@ -24,30 +24,38 @@ public class MigrateUP {
 			+ ");";
 	private String EventoCreate ="CREATE TABLE evento(\n"
 			+ "    id_evento serial,\n"
-			+ "    CargaHoraria VARCHAR(10) not null,\n"
+			+ "    CargaHoraria VARCHAR(100) not null,\n"
 			+ "    NomeEvento VARCHAR(100) not null,\n"
 			+ "    endereco VARCHAR(100) default 'Local não informado' not null,\n"
-			+ "    HoraInicio TIME not null,\n"
-			+ "    HoraFim TIME not null,\n"
-			+ "    DataInicio DATE not null,\n"
-			+ "    DataFIM DATE not null,\n"
+			+ "    HoraInicio VARCHAR(100) not null,\n"
+			+ "    HoraFim VARCHAR(100) not null,\n"
+			+ "    DataInicio VARCHAR(100) not null,\n"
+			+ "    DataFIM VARCHAR(100) not null,\n"
 			+ "    Area VARCHAR(100) default 'Tecnologia' not null,\n"
 			+ "    Vagas VARCHAR(100) default '1' not null,\n"
 			+ "    PRIMARY KEY (id_evento)\n"
 			+ ");";
-	private String SubeventoCreate = "CREATE TABLE subevento(\n"
-			+ "    id_subevento serial,\n"
-			+ "    id_evento serial,\n"
-			+ "    CargaHoraria VARCHAR(10) not null,\n"
-			+ "    NomeSubevento VARCHAR(100) not null,\n"
-			+ "    endereco VARCHAR(100) default 'Local não informado' not null,\n"
-			+ "    HoraInicio TIME not null,\n"
-			+ "    HoraFim TIME not null,\n"
-			+ "    DataSub DATE not null,\n"
-			+ "    Vagas VARCHAR(30) default '1' not null,\n"
-			+ "    PRIMARY KEY (id_subevento),\n"
-			+ "    FOREIGN KEY (id_evento) REFERENCES evento\n"
-			+ ");";
+	private String SubeventoCreate = "CREATE TABLE subevento(\r\n" + 
+			"    id_subevento serial,\r\n" + 
+			"	id_evento serial,\r\n" + 
+			"    CargaHoraria VARCHAR not null,\r\n" + 
+			"    NomeSubevento VARCHAR(100) not null,\r\n" + 
+			"    endereco VARCHAR(100) default 'Local n�o informado' not null,\r\n" + 
+			"    HoraInicio VARCHAR(100) not null,\r\n" + 
+			"    HoraFim VARCHAR(100) not null,\r\n" + 
+			"    DataSub VARCHAR(100) not null,\r\n" + 
+			"    Vagas VARCHAR(100) not null,\r\n" + 
+			"    PRIMARY KEY (id_subevento),\r\n" + 
+			"	FOREIGN KEY (id_evento) REFERENCES evento\r\n" + 
+			"	ON DELETE CASCADE\r\n" + 
+			");";
+	private String GerenciaPalestranteCreate = "CREATE TABLE possuiPalestrante(\r\n" + 
+			"	id_subevento serial,\r\n" + 
+			"    id_palestrante serial,\r\n" + 
+			"	FOREIGN KEY (id_subevento) REFERENCES subevento ON DELETE CASCADE,\r\n" + 
+			"	FOREIGN KEY (id_palestrante) REFERENCES palestrante\r\n" + 
+			"		ON DELETE CASCADE\r\n" + 
+			");";
 	private String PalestranteCreate = "CREATE TABLE palestrante(\n"
 			+ "    id_palestrante serial not null,\n"
 			+ "    NomeCompleto VARCHAR(100) not null,\n"
@@ -60,5 +68,5 @@ public class MigrateUP {
     Migrate evento = new Migrate(this.EventoCreate);
     Migrate sub = new Migrate(this.SubeventoCreate);
     Migrate Pale = new Migrate(this.PalestranteCreate);
-				
+    Migrate gen = new Migrate(this.GerenciaPalestranteCreate);
 }

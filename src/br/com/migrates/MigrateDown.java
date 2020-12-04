@@ -8,9 +8,11 @@ public class MigrateDown {
 	private String EventoDrop = "DROP TABLE evento";
 	private String SubeventoDrop = "DROP TABLE subevento";
 	private String PalestrantDrop ="DROP TABLE palestrante";
+	private String GenrenciaPalest = "DROP TABLE possuiPalestrante";
 	Migrate sub = new Migrate(this.SubeventoDrop);
 	Migrate alu = new Migrate(this.AlunoDrop);
 	Migrate pale = new Migrate(this.PalestrantDrop);
 	Migrate eve = new Migrate(this.EventoDrop);
 	Migrate adm = new Migrate(this.AdminDrop);
+	Migrate gen = new Migrate(this.GenrenciaPalest); 
 }

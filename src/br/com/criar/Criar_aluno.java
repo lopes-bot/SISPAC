@@ -19,6 +19,7 @@ public class Criar_aluno {
 				ps.setString(3, alu.getNome());
 				ps.setString(4, alu.getEmail());
 				ps.execute();
+				ps.close();
 			}catch(Exception e) {
 				
 			System.out.println(e);

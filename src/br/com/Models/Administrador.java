@@ -1,47 +1,64 @@
 package br.com.Models;
 
 public class Administrador {
-	private String cnpj;
+	private int id_admin;
+	private String cpf;
 	private String senha;
 	private String nome;
 	private String email;
 	
-	
-	public Administrador(String cnpj, String senha, String nome, String email) {
-		this.cnpj = cnpj;
+	public Administrador(int id_admin, String cpf, String senha, String nome, String email) {
+		this.id_admin = id_admin;
+		this.cpf = cpf;
 		this.senha = senha;
 		this.nome = nome;
 		this.email = email;
 	}
-	
-	public String getCnpj() {
-		return cnpj;
+
+	public int getId_admin() {
+		return id_admin;
 	}
-	public void setCnpj(String cnpj) {
-		this.cnpj = cnpj;
+
+	public void setId_admin(int id_admin) {
+		this.id_admin = id_admin;
 	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
 	public String getSenha() {
 		return senha;
 	}
+
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+
 	public String getNome() {
 		return nome;
 	}
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
 	public String getEmail() {
 		return email;
 	}
+
 	public void setEmail(String email) {
 		this.email = email;
 	}
 
 	@Override
 	public String toString() {
-		return "Administrador [cnpj=" + cnpj + ", senha=" + senha + ", nome=" + nome + ", email=" + email + "]";
+		return "Administrador [id_admin=" + id_admin + ", cpf=" + cpf + ", senha=" + senha + ", nome=" + nome
+				+ ", email=" + email + "]";
 	}
 	
 }
