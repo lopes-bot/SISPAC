@@ -1,24 +1,22 @@
 package br.com.Models;
 
-import java.util.Date;
 
 public class Evento {
+	private int id_evento;
 	private String nomeEvento;
 	private String endereco;
-	private Date dataAbertura;
-	private Date dataEncerra;
-	private Date horaInicio;
-	private Date horaFim;
+	private String dataAbertura;
+	private String dataEncerra;
+	private String horaInicio;
+	private String horaFim;
 	private String area;
 	private String vagas;
 	private String cargaHoraria;
 	
-	
-	
-	
-	public Evento(String nomeEvento, String endereco, Date dataAbertura, Date dataEncerra, Date horaInicio,
-			Date horaFim, String area, String vagas, String cargaHoraria) {
+	public Evento(int id_evento, String nomeEvento, String endereco, String dataAbertura, String dataEncerra,
+			String horaInicio, String horaFim, String area, String vagas, String cargaHoraria) {
 		super();
+		this.id_evento = id_evento;
 		this.nomeEvento = nomeEvento;
 		this.endereco = endereco;
 		this.dataAbertura = dataAbertura;
@@ -28,6 +26,12 @@ public class Evento {
 		this.area = area;
 		this.vagas = vagas;
 		this.cargaHoraria = cargaHoraria;
+	}
+	public int getId_evento() {
+		return id_evento;
+	}
+	public void setId_evento(int id_evento) {
+		this.id_evento = id_evento;
 	}
 	public String getNomeEvento() {
 		return nomeEvento;
@@ -41,28 +45,28 @@ public class Evento {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-	public Date getDataAbertura() {
+	public String getDataAbertura() {
 		return dataAbertura;
 	}
-	public void setDataAbertura(Date dataAbertura) {
+	public void setDataAbertura(String dataAbertura) {
 		this.dataAbertura = dataAbertura;
 	}
-	public Date getDataEncerra() {
+	public String getDataEncerra() {
 		return dataEncerra;
 	}
-	public void setDataEncerra(Date dataEncerra) {
+	public void setDataEncerra(String dataEncerra) {
 		this.dataEncerra = dataEncerra;
 	}
-	public Date getHoraInicio() {
+	public String getHoraInicio() {
 		return horaInicio;
 	}
-	public void setHoraInicio(Date horaInicio) {
+	public void setHoraInicio(String horaInicio) {
 		this.horaInicio = horaInicio;
 	}
-	public Date getHoraFim() {
+	public String getHoraFim() {
 		return horaFim;
 	}
-	public void setHoraFim(Date horaFim) {
+	public void setHoraFim(String horaFim) {
 		this.horaFim = horaFim;
 	}
 	public String getArea() {
@@ -85,14 +89,16 @@ public class Evento {
 	}
 	@Override
 	public String toString() {
-		return "Evento [nomeEvento=" + nomeEvento + ", endereco=" + endereco + ", dataAbertura=" + dataAbertura
-				+ ", dataEncerra=" + dataEncerra + ", horaInicio=" + horaInicio + ", horaFim=" + horaFim + ", area="
-				+ area + ", vagas=" + vagas + ", cargaHoraria=" + cargaHoraria + "]";
+		return "Evento [id_evento=" + id_evento + ", nomeEvento=" + nomeEvento + ", endereco=" + endereco
+				+ ", dataAbertura=" + dataAbertura + ", dataEncerra=" + dataEncerra + ", horaInicio=" + horaInicio
+				+ ", horaFim=" + horaFim + ", area=" + area + ", vagas=" + vagas + ", cargaHoraria=" + cargaHoraria
+				+ "]";
 	}
 	
+
 	
-				
-	
+		
+
 }
 
 

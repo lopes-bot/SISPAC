@@ -20,8 +20,10 @@ public class Criar_aluno{
 				ps.setString(3, alu.getNome());
 				ps.setString(4, alu.getEmail());
 				ps.execute();
+
 				System.out.println(sql);
 				System.out.println(alu);
+
 				ps.close();
 			}catch(Exception e) {
 				
