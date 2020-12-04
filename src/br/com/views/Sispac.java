@@ -23,17 +23,17 @@ public class Sispac {
 		//gerencia palestrante tem que ser criado  depois de subevento e palestrante
 		//Criar_gerenciaPalestrante gp = new Criar_gerenciaPalestrante(1,1);
 
-		//Editar_admin ed1 = new Editar_admin(1);//necessario passar o id_admin
-		//ed1.EditarAdminEmail("testamdo@hotmail.com");
-		//ed1.EditarAdminSenha("andresenha");
-		//ed1.EditarAdminNome("corno da silva");
+		Editar_admin ed1 = new Editar_admin(1);//necessario passar o id_admin
+		//ed1.EditarEmail("segundo@gmail");
+		//ed1.EditarSenha("4234");
+		ed1.EditarNome("segundão");
 		
 		//Editar_aluno ed2 = new Editar_aluno(1);//necessario passar o id_aluno
 		//ed2.EditarAlunoSenha("000000");
 		//ed2.EditarAlunoEmail("naruto@gmail");
 		//ed2.EditarAlunoNome("patati");
 
-		Editar_evento edEv = new Editar_evento(1);//necessario passar p id_evento
+		//Editar_evento edEv = new Editar_evento(1);//necessario passar p id_evento
 		//edEv.EditarCargaHoraria("500");
 		//edEv.EditarNome("maratona");
 		//edEv.EditarEndereco("avenida Brasil");
@@ -42,7 +42,7 @@ public class Sispac {
 		//edEv.EditarDataInicio("14/05/2022");
 		//edEv.EditarDataTermino("15/05/2022");
 		//edEv.EditarArea("humanas");
-		edEv.EditarVagas("0");
+		//edEv.EditarVagas("0");
 	}
 
 }
