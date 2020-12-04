@@ -28,12 +28,21 @@ public class Sispac {
 		//ed1.EditarAdminSenha("andresenha");
 		//ed1.EditarAdminNome("corno da silva");
 		
-		Editar_aluno ed2 = new Editar_aluno(1);
+		//Editar_aluno ed2 = new Editar_aluno(1);//necessario passar o id_aluno
 		//ed2.EditarAlunoSenha("000000");
 		//ed2.EditarAlunoEmail("naruto@gmail");
-		ed2.EditarAlunoNome("patati");
+		//ed2.EditarAlunoNome("patati");
 
-
+		Editar_evento edEv = new Editar_evento(1);//necessario passar p id_evento
+		//edEv.EditarCargaHoraria("500");
+		//edEv.EditarNome("maratona");
+		//edEv.EditarEndereco("avenida Brasil");
+		//edEv.EditarHoraInicio("20:00");
+		//edEv.EditarHoraTermino("21:00");
+		//edEv.EditarDataInicio("14/05/2022");
+		//edEv.EditarDataTermino("15/05/2022");
+		//edEv.EditarArea("humanas");
+		edEv.EditarVagas("0");
 	}
 
 }
