@@ -6,21 +6,34 @@ import br.com.Dbconnect.ConnectDb;
 import br.com.Models.Aluno;
 
 public class Editar_aluno {
-	public Editar_aluno() {
+	private int id_aluno;
+	
+	public Editar_aluno(int id_aluno) {
+			this.id_aluno = id_aluno;
 			
-			String sql = "UPDATE aluno set senha = ? WHERE id_aluno = ?";	
-			Aluno al = new Aluno(1,"92787414");
-			
-			ConnectDb con = new ConnectDb(sql);
-			PreparedStatement ps =con.getPs();
-			try {
-				ps.setString(1, al.getSenha());
-				ps.setInt(2, al.getId_aluno());
-				ps.execute();
-				ps.close();
-			}catch(Exception e) {
-				System.out.println(e);
-			}
-		
+				
 	}
+	public void EditarAlunoSenha(String senha) {
+		String sql = "UPDATE aluno set senha = ? WHERE id_aluno = ?";	
+		update(senha,sql);
+	}
+	public void update(String valor, String sql) {
+		ConnectDb con = new ConnectDb(sql);
+		PreparedStatement ps =con.getPs();
+		try {
+			ps.setString(1, valor);	
+			ps.setInt(2,getId_aluno());
+			ps.execute();
+			ps.close();
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+	public int getId_aluno() {
+		return id_aluno;
+	}
+	public void setId_aluno(int id_aluno) {
+		this.id_aluno = id_aluno;
+	}
+	
 }

@@ -7,6 +7,7 @@ import br.com.Models.Administrador;
 
 public class Editar_admin {
 	private int id_admin;
+	
 	public Editar_admin(int id_admin) {
 		this.id_admin = id_admin;
 		
