@@ -17,6 +17,17 @@ public class Editar_aluno {
 		String sql = "UPDATE aluno set senha = ? WHERE id_aluno = ?";	
 		update(senha,sql);
 	}
+	public void EditarAlunoEmail(String email) {
+		String sql = "UPDATE aluno set email = ? WHERE id_aluno = ?";		
+		update(email,sql);
+	}
+	
+	
+	public void EditarAlunoNome(String nome) {
+		String sql = "UPDATE aluno set  nome = ? WHERE id_aluno = ?";
+		update(nome,sql);
+	}
+	
 	public void update(String valor, String sql) {
 		ConnectDb con = new ConnectDb(sql);
 		PreparedStatement ps =con.getPs();

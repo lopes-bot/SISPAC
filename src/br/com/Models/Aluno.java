@@ -76,9 +76,5 @@ public class Aluno {
 	
 	
 	
-<<<<<<< HEAD
 
-
-=======
->>>>>>> teste
 }

@@ -27,9 +27,11 @@ public class Sispac {
 		//ed1.EditarAdminEmail("testamdo@hotmail.com");
 		//ed1.EditarAdminSenha("andresenha");
 		//ed1.EditarAdminNome("corno da silva");
-		Editar_aluno ed2 = new Editar_aluno(1);
-		ed2.EditarAlunoSenha("000000");
 		
+		Editar_aluno ed2 = new Editar_aluno(1);
+		//ed2.EditarAlunoSenha("000000");
+		//ed2.EditarAlunoEmail("naruto@gmail");
+		ed2.EditarAlunoNome("patati");
 
 
 	}
