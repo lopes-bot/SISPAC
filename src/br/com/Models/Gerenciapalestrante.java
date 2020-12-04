@@ -24,6 +24,11 @@ public class Gerenciapalestrante {
 	public void setId_palestrante(int id_palestrante) {
 		this.id_palestrante = id_palestrante;
 	}
+
+	@Override
+	public String toString() {
+		return "Gerenciapalestrante [id_subevento=" + id_subevento + ", id_palestrante=" + id_palestrante + "]";
+	}
 	
 	
 }

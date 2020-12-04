@@ -6,10 +6,11 @@ import br.com.Dbconnect.ConnectDb;
 import br.com.Models.Subevento;
 
 public class Criar_subevento {
-	public Criar_subevento(){
+	public Criar_subevento(int id_evento, int id_subevento, String cargahoraria, String nomesubevento, String endereco,
+			String horainicio, String horafim, String datasub, String vagas){
 		
 		String sql = "INSERT INTO subevento (id_evento,id_subevento,CargaHoraria,NomeSubevento,endereco,HoraInicio,HoraFim,DataSub,Vagas) VALUES (?,?,?,?,?,?,?,?,?)";	
-		Subevento sub = new Subevento(1, 1,"4", "O mercado dos jogos", "Rua joão carlos", "9:00", "12:00", "24/05/2021", "50");
+		Subevento sub = new Subevento(id_evento, id_subevento,cargahoraria, nomesubevento, endereco, horainicio, horafim, datasub, vagas);
 		ConnectDb con = new ConnectDb(sql);
 		PreparedStatement ps =con.getPs();
 		try {
@@ -24,6 +25,8 @@ public class Criar_subevento {
 			ps.setString(9, sub.getVagas());				
 			ps.execute();
 			ps.close();
+			System.out.println(sql);
+			System.out.println(sub);
 		}catch(Exception e) {
 			System.out.println(e);
 		}

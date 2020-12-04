@@ -15,10 +15,12 @@ public class Sispac {
 				"Ufersa campus pdf","10/05/2021",
 				"15/10/2021","10:00","17:00","tecnologia","110","200");
 		*/
-
-		//Criar_evento ev = new Criar_evento();
-		//Criar_subevento sub = new Criar_subevento();
-
+		/*Criar_subevento sub = new Criar_subevento(1,1,"10","palestra sobre computadores modernos"
+				,"Ufersa campus pdf","10:25","11:25","10/05/2021","15");*/
+	
+		//Criar_palestrante pale = new Criar_palestrante(1,"Jose da silva","silva@gmail.com","(88)99587-4567");
+		//gerencia palestrante tem que ser criado  depois de subevento e palestrante
+		Criar_gerenciaPalestrante gp = new Criar_gerenciaPalestrante(1,1);
 	}
 
 }
