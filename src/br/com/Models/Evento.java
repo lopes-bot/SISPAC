@@ -15,7 +15,6 @@ public class Evento {
 	
 	public Evento(int id_evento, String nomeEvento, String endereco, String dataAbertura, String dataEncerra,
 			String horaInicio, String horaFim, String area, String vagas, String cargaHoraria) {
-		super();
 		this.id_evento = id_evento;
 		this.nomeEvento = nomeEvento;
 		this.endereco = endereco;
@@ -27,6 +26,11 @@ public class Evento {
 		this.vagas = vagas;
 		this.cargaHoraria = cargaHoraria;
 	}
+	
+	public Evento(int id_evento) {
+		this.id_evento = id_evento;
+	}
+	
 	public int getId_evento() {
 		return id_evento;
 	}

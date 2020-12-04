@@ -22,6 +22,19 @@ public class Subevento {
 		this.datasub = datasub;
 		this.vagas = vagas;
 	}
+	
+	public Subevento( int id_subevento, String cargahoraria, String nomesubevento, String endereco,
+			String horainicio, String horafim, String datasub, String vagas) {
+		this.id_subevento = id_subevento;
+		this.cargahoraria = cargahoraria;
+		this.nomesubevento = nomesubevento;
+		this.endereco = endereco;
+		this.horainicio = horainicio;
+		this.horafim = horafim;
+		this.datasub = datasub;
+		this.vagas = vagas;
+	}
+	
 	public int getId_evento() {
 		return id_evento;
 	}

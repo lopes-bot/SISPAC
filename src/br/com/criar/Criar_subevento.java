@@ -25,8 +25,7 @@ public class Criar_subevento {
 			ps.setString(9, sub.getVagas());				
 			ps.execute();
 			ps.close();
-			System.out.println(sql);
-			System.out.println(sub);
+			
 		}catch(Exception e) {
 			System.out.println(e);
 		}

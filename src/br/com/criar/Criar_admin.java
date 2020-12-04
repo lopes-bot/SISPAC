@@ -7,10 +7,15 @@ import br.com.Models.Administrador;
 public class Criar_admin {
 	public Criar_admin(int id_admin, String cnpj,String senha, String nome, String email ) {
 		
+<<<<<<< HEAD
 
 
 		String sql = "INSERT INTO administrador (id_admin,cnpj,senha,nome,email) VALUES(?,?,?,?,?)";	
 		Administrador adm = new Administrador(id_admin,cnpj,senha,nome,email);
+=======
+		String sql = "INSERT INTO administrador (id_admin,cnpj,senha,nome,email) VALUES(?,?,?,?,?)";	
+		Administrador adm = new Administrador(1,"79845054","1234","jose","vaicerto@gmail.com");
+>>>>>>> teste
 
 		ConnectDb con = new ConnectDb(sql);
 		PreparedStatement ps =con.getPs();

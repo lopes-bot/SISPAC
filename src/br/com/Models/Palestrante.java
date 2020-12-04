@@ -12,6 +12,10 @@ public class Palestrante {
 		this.email = email;
 		this.telefone = telefone;
 	}
+	
+	public Palestrante(int id_palestrante) {
+		this.id_palestrante = id_palestrante;
+	}
 
 	public int getId_palestrante() {
 		return id_palestrante;
