@@ -28,11 +28,18 @@ public class Sispac {
 		//ed1.EditarSenha("4234");
 		//ed1.EditarNome("segundão");
 		
-		Editar_aluno ed2 = new Editar_aluno(1);//necessario passar o id_aluno
+		//Editar_aluno ed2 = new Editar_aluno(1);//necessario passar o id_aluno
 		//ed2.EditarSenha("testando senha");
 		//ed2.EditarEmail("aluno@gmail");
-		ed2.EditarNome("Ganbiarra");
-
+		//ed2.EditarNome("Ganbiarra");
+		
+		//Editar_palestrante p = new Editar_palestrante(1);//necessario passar o id_palestrante
+		//p.EditarSenha("dsadhiah");
+		//p.EditarEmail("novo@gmail");
+		//p.EditarNome("André Lopes");
+		//p.EditarTelefone("3422-8446");
+		
+		
 		//Editar_evento edEv = new Editar_evento(1);//necessario passar p id_evento
 		//edEv.EditarCargaHoraria("500");
 		//edEv.EditarNome("maratona");
