@@ -40,7 +40,7 @@ public class Sispac {
 		//p.EditarTelefone("3422-8446");
 		
 		
-		Editar_evento ev = new Editar_evento(1);//necessario passar p id_evento
+		//Editar_evento ev = new Editar_evento(1);//necessario passar p id_evento
 		//ev.EditarCargaHoraria("200");
 		//ev.EditarNome("olimpiada de fisica");
 		//ev.EditarEndereco("Iracema - ce");
@@ -49,7 +49,16 @@ public class Sispac {
 		//ev.EditarDataInicio("20/08/2020");
 		//ev.EditarDataTermino("05/09/2020");
 		//ev.EditarArea("Biologicas");
-		ev.EditarVagas("110");
+		//ev.EditarVagas("110");
+		
+		//Editar_subevento s = new Editar_subevento(1);//necessario passar p id_subevento
+		//s.EditarCargaHoraria("10");
+		//s.EditarEndereco("sala 10 bloco A");
+		//s.EditarHoraInicio("13:00");
+		//s.EditarHoraTermino("17:00");
+		//s.EditarNome("super poderes");
+		//s.EditarVagas("3");
+		//s.EditarData("10/01/2021");
 	}
 
 }
