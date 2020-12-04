@@ -7,9 +7,7 @@ import br.com.Models.Administrador;
 public class Criar_admin {
 	public Criar_admin() {
 		
-
-
-		String sql = "INSERT INTO administrador (id_admin,cpf,senha,nome,email) VALUES(?,?,?,?,?)";	
+		String sql = "INSERT INTO administrador (id_admin,cnpj,senha,nome,email) VALUES(?,?,?,?,?)";	
 		Administrador adm = new Administrador(1,"79845054","1234","jose","vaicerto@gmail.com");
 
 		ConnectDb con = new ConnectDb(sql);

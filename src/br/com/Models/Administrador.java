@@ -14,7 +14,18 @@ public class Administrador {
 		this.nome = nome;
 		this.email = email;
 	}
+	
+	public Administrador(int id_admin, String senha, String nome, String email) {
+		this.id_admin = id_admin;
+		this.senha = senha;
+		this.nome = nome;
+		this.email = email;
+	}
 
+	public Administrador(int id_admin) {
+		this.id_admin = id_admin;
+	}
+	
 	public int getId_admin() {
 		return id_admin;
 	}

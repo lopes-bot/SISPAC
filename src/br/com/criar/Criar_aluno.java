@@ -6,24 +6,21 @@ import br.com.Models.Aluno;
 
 public class Criar_aluno{
 	
-	public Criar_aluno(String cpf,String nome,String email, String senha) {
-		String sql = "INSERT INTO aluno(cpf,nome,email,senha) VALUES(?,?,?,?)";	
-		Aluno alu = new Aluno(cpf,nome,email,senha);
+	public Criar_aluno(int idaluno ,String cpf,String nome,String email, String senha) {
+		String sql = "INSERT INTO aluno(id_aluno,cpf,nome,email,senha) VALUES(?,?,?,?,?)";	
+		Aluno alu = new Aluno(idaluno,cpf,nome,email,senha);
 		
 		ConnectDb con = new ConnectDb(sql);
 		
 		PreparedStatement ps = con.getPs();
 		
 		try {
-				ps.setString(1, alu.getCpf());
-				ps.setString(2, alu.getSenha());
+				ps.setInt(1, alu.getId_aluno());
+				ps.setString(2, alu.getCpf());
 				ps.setString(3, alu.getNome());
 				ps.setString(4, alu.getEmail());
+				ps.setString(5, alu.getSenha());
 				ps.execute();
-
-				System.out.println(sql);
-				System.out.println(alu);
-
 				ps.close();
 			}catch(Exception e) {
 				
