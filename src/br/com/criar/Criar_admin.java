@@ -5,12 +5,12 @@ import java.sql.PreparedStatement;
 import br.com.Models.Administrador;
 
 public class Criar_admin {
-	public Criar_admin() {
+	public Criar_admin(int id_admin, String cnpj,String senha, String nome, String email ) {
 		
 
 
-		String sql = "INSERT INTO administrador (id_admin,cpf,senha,nome,email) VALUES(?,?,?,?,?)";	
-		Administrador adm = new Administrador(1,"79845054","1234","jose","vaicerto@gmail.com");
+		String sql = "INSERT INTO administrador (id_admin,cnpj,senha,nome,email) VALUES(?,?,?,?,?)";	
+		Administrador adm = new Administrador(id_admin,cnpj,senha,nome,email);
 
 		ConnectDb con = new ConnectDb(sql);
 		PreparedStatement ps =con.getPs();
@@ -21,6 +21,9 @@ public class Criar_admin {
 			ps.setString(4, adm.getNome());
 			ps.setString(5, adm.getEmail());
 			ps.execute();
+			ps.close();
+			System.out.println(sql);
+			System.out.println(adm);
 		}catch(Exception e) {
 			System.out.println(e);
 		}

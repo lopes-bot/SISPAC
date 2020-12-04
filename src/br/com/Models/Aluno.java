@@ -1,18 +1,22 @@
 package br.com.Models;
 
 public class Aluno {
+	private int id_aluno;
 	private String cpf;
 	private String nome;
 	private String email;
 	private String senha;
 	
-	public Aluno(String cpf, String nome, String email, String senha) {
+		
+	public Aluno(int id_aluno, String cpf, String nome, String email, String senha) {
 		super();
+		this.id_aluno = id_aluno;
 		this.cpf = cpf;
 		this.nome = nome;
 		this.email = email;
 		this.senha = senha;
 	}
+	
 	public String getCpf() {
 		return cpf;
 	}
@@ -37,10 +41,22 @@ public class Aluno {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+	public int getId_aluno() {
+		return id_aluno;
+	}
+	public void setId_aluno(int id_aluno) {
+		this.id_aluno = id_aluno;
+	}
 
 	@Override
 	public String toString() {
-		return "Aluno [cpf=" + cpf + ", nome=" + nome + ", email=" + email + ", senha=" + senha + "]";
+		return "Aluno [id_aluno=" + id_aluno + ", cpf=" + cpf + ", nome=" + nome + ", email=" + email + ", senha="
+				+ senha + "]";
 	}
+	
+	
+	
+	
+
 
 }
