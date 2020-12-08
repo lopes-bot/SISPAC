@@ -2,8 +2,15 @@ package br.com.views;
 
 import br.com.migrates.*;
 import br.com.editar.*;
+import br.com.Models.Administrador;
+import br.com.Models.Aluno;
+import br.com.Models.Evento;
+import br.com.buscas.FindAdmin;
+import br.com.buscas.FindAluno;
+import br.com.buscas.FindEvento;
 import br.com.criar.*;
 import br.com.delete.*;
+
 
 public class Sispac {
 	public static void main(String[] ags) {
@@ -11,9 +18,9 @@ public class Sispac {
 		//MigrateDown migrates = new MigrateDown();// remove as tabelas do banco
 
 
-		//Criar_admin ad = new Criar_admin(1,"789456123","teste","escola fundamental","ef@gmail.com");
-		//Criar_aluno al = new Criar_aluno(2,"005447646","joao","Ljo32sos@gmail","a23re");
-		/*Criar_evento ev = new Criar_evento(2,"Ecop",
+		//Criar_admin ad = new Criar_admin(3,"79848483","senha","teste","teste@gmail.com");
+		//Criar_aluno al = new Criar_aluno(2,"07547646","joao teste","teste@gmail","senha");
+		/*Criar_evento ev = new Criar_evento(3,"Ecop3",
 				"Ufersa campus pdf","10/05/2021",
 				"15/10/2021","10:00","17:00","tecnologia","110","200");
 		*/
@@ -66,6 +73,41 @@ public class Sispac {
 		//Delete_evento d3 = new Delete_evento(1);
 		//Delete_palestrante d5 = new Delete_palestrante(1);
 		
+		//FindAdmin adm = new FindAdmin();
+		//adm.Login("andre@gamil.com", "senha");
+		//adm.findOne(1);//necessario o id do admin;
+		//	System.out.println(adm.findOne(1));
+		//Administrador list[] = adm.findAll(1); // necessario informa a pagina obs paginas maior que 0
+		/*for(int i =0 ; i<10 ; i++) {
+			if(list[i] !=null) {
+				System.out.println(list[i]);
+			}
+			
+		}*/
+		
+		
+		
+		//FindAluno alu = new FindAluno();
+		///System.out.println(alu.findOne(1));// necessario informa o id_aluno
+		/*Aluno list2[] = alu.findAll(1);// necessario informa a pagina obs paginas maior que 0
+		for(int i =0 ; i<10 ; i++) {
+			if(list2[i] !=null) {
+				System.out.println(list2[i]);
+			}
+			
+		}*/
+		
+		/*
+		 FindEvento ev = new FindEvento();
+		 System.out.println(ev.findOne(1));// necessario informa o id_aluno
+		 Evento list3[] =  ev.findAll(1);// necessario informa a pagina obs paginas maior que 0
+				for(int i =0 ; i<10 ; i++) {
+					if(list3[i] !=null) {
+						System.out.println(list3[i]);
+					}
+					
+		}
+		*/
 	}
 
 }
