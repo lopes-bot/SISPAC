@@ -87,9 +87,9 @@ public class Sispac {
 		
 		
 		
-		//FindAluno alu = new FindAluno();
+		FindAluno alu = new FindAluno();
 		//alu.Login("teste@gmail", "senha");
-		//System.out.println(alu.Login("teste@gmail", "senha"));
+		System.out.println(alu.Login("teste@gmail", "senha"));
 		///System.out.println(alu.findOne(1));// necessario informa o id_aluno
 		/*Aluno list2[] = alu.findAll(1);// necessario informa a pagina obs paginas maior que 0
 		for(int i =0 ; i<10 ; i++) {

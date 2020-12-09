@@ -1,4 +1,4 @@
-package br.com.views;
+package br.com.email;
 
 public class Email {
 
