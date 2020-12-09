@@ -1,5 +1,5 @@
 package br.com.views;
 
-public class Email {
+public interface Admin {
 
 }

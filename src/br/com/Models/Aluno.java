@@ -7,13 +7,16 @@ public class Aluno {
 	private String email;
 	private String senha;
 	
+
 	public Aluno(int id_aluno, String cpf, String nome, String email, String senha) {
+		
 		this.id_aluno = id_aluno;
 		this.cpf = cpf;
 		this.nome = nome;
 		this.email = email;
 		this.senha = senha;
 	}
+
 
 	public Aluno(int id_aluno, String senha) {
 		this.id_aluno = id_aluno;
@@ -26,10 +29,6 @@ public class Aluno {
 	
 	public int getId_aluno() {
 		return id_aluno;
-	}
-
-	public void setId_aluno(int id_aluno) {
-		this.id_aluno = id_aluno;
 	}
 
 	public String getCpf() {
@@ -63,6 +62,10 @@ public class Aluno {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+	
+	public void setId_aluno(int id_aluno) {
+		this.id_aluno = id_aluno;
+	}
 
 	@Override
 	public String toString() {
@@ -73,4 +76,5 @@ public class Aluno {
 	
 	
 	
+
 }

@@ -6,9 +6,11 @@ import br.com.Models.Aluno;
 
 public class Criar_aluno{
 	
-	public Criar_aluno(int idaluno ,String cpf,String nome,String email, String senha) {
+
+	public Criar_aluno(int id_aluno,String cpf,String nome,String email, String senha) {
 		String sql = "INSERT INTO aluno(id_aluno,cpf,nome,email,senha) VALUES(?,?,?,?,?)";	
-		Aluno alu = new Aluno(idaluno,cpf,nome,email,senha);
+		Aluno alu = new Aluno(id_aluno,cpf,nome,email,senha);
+
 		
 		ConnectDb con = new ConnectDb(sql);
 		
@@ -19,9 +21,10 @@ public class Criar_aluno{
 				ps.setString(2, alu.getCpf());
 				ps.setString(3, alu.getNome());
 				ps.setString(4, alu.getEmail());
-				ps.setString(5, alu.getSenha());
+				ps.setString(5, alu.getSenha());				
 				ps.execute();
 				ps.close();
+							
 			}catch(Exception e) {
 				
 			System.out.println(e);

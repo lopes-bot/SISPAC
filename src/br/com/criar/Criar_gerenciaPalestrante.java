@@ -8,9 +8,9 @@ import br.com.Models.Gerenciapalestrante;
 
 public class Criar_gerenciaPalestrante {
 	
-	public Criar_gerenciaPalestrante() {
-		String sql = " possuiPalestrante(id_subevento, id_palestrante) VALUES(?,?)";	
-		Gerenciapalestrante pale = new Gerenciapalestrante(1,1);
+	public Criar_gerenciaPalestrante(int id_subevento, int id_palestrante) {
+		String sql = "INSERT INTO  possuiPalestrante(id_subevento, id_palestrante) VALUES(?,?)";	
+		Gerenciapalestrante pale = new Gerenciapalestrante(id_subevento,id_palestrante);
 		ConnectDb con = new ConnectDb(sql);
 		
 		PreparedStatement ps = con.getPs();
@@ -20,6 +20,7 @@ public class Criar_gerenciaPalestrante {
 				ps.setInt(2, pale.getId_palestrante());
 				ps.execute();
 				ps.close();
+				
 			}catch(Exception e) {
 				
 			System.out.println(e);

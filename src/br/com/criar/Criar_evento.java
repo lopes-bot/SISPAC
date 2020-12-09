@@ -9,10 +9,11 @@ import br.com.Models.Evento;
 
 public class Criar_evento {
 
-	public Criar_evento(){
+	public Criar_evento(int id_evento, String nomeEvento, String endereco, String dataAbertura, String dataEncerra,
+			String horaInicio, String horaFim, String area, String vagas, String cargaHoraria){
 			
 			String sql = "INSERT INTO evento (id_evento,CargaHoraria,NomeEvento,endereco,HoraInicio,HoraFim,DataInicio,DataFIM,Area,Vagas) VALUES (?,?,?,?,?,?,?,?,?,?)";	
-			Evento ev = new Evento(1,"Inteligencia artificial 3", "avenida augusta","24/04/2021","27/05/2021" ,"08:00","19:00","tecnologia","1000", "200" );
+			Evento ev = new Evento(id_evento,nomeEvento, endereco,dataAbertura,dataEncerra ,horaInicio,horaFim,area,vagas, cargaHoraria);
 			ConnectDb con = new ConnectDb(sql);
 			PreparedStatement ps =con.getPs();
 			try {
@@ -28,7 +29,7 @@ public class Criar_evento {
 				ps.setString(10, ev.getVagas());
 				ps.execute();
 				ps.close();
-
+				
 			}catch(Exception e) {
 				System.out.println(e);
 			}

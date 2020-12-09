@@ -2,14 +2,14 @@ package br.com.Models;
 
 public class Administrador {
 	private int id_admin;
-	private String cpf;
+	private String cnpj;
 	private String senha;
 	private String nome;
 	private String email;
 	
-	public Administrador(int id_admin, String cpf, String senha, String nome, String email) {
+	public Administrador(int id_admin, String cnpj, String senha, String nome, String email) {
 		this.id_admin = id_admin;
-		this.cpf = cpf;
+		this.cnpj = cnpj;
 		this.senha = senha;
 		this.nome = nome;
 		this.email = email;
@@ -35,11 +35,11 @@ public class Administrador {
 	}
 
 	public String getCpf() {
-		return cpf;
+		return cnpj;
 	}
 
 	public void setCpf(String cpf) {
-		this.cpf = cpf;
+		this.cnpj = cpf;
 	}
 
 	public String getSenha() {
@@ -68,7 +68,7 @@ public class Administrador {
 
 	@Override
 	public String toString() {
-		return "Administrador [id_admin=" + id_admin + ", cpf=" + cpf + ", senha=" + senha + ", nome=" + nome
+		return "Administrador [id_admin=" + id_admin + ", cnpj=" + cnpj + ", senha=" + senha + ", nome=" + nome
 				+ ", email=" + email + "]";
 	}
 	
