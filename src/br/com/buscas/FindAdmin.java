@@ -78,20 +78,16 @@ public class FindAdmin {
 		
 		public Administrador Login(String email, String senha) {
 			
-			String sql = "SELECT * FROM administrador WHERE senha= '"+senha+"' AND email= '"+email+"';";
-			String sql2 = "SELECT * FROM administrador WHERE senha= 'senha' AND email= 'email@gmail.com';";
-			ConnectDb con = new ConnectDb(sql2);
-			System.out.println(sql);
-			System.out.println(sql2);
+			String sql = "SELECT * FROM administrador WHERE email= '"+email+"' AND senha= '"+senha+"';";
+			
+			ConnectDb con = new ConnectDb(sql);
+						
 			PreparedStatement ps = con.getPs();
 			
 			try {
 			
-			ResultSet result =	ps.executeQuery();
-			
-			
-			result.next();
-			
+				ResultSet result =	ps.executeQuery();		
+				result.next();			
 				Administrador adm = new Administrador(
 						result.getInt("id_admin"),
 						result.getString("cnpj"),

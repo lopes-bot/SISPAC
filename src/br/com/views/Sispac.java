@@ -74,7 +74,7 @@ public class Sispac {
 		//Delete_palestrante d5 = new Delete_palestrante(1);
 		
 		//FindAdmin adm = new FindAdmin();
-		//adm.Login("andre@gamil.com", "senha");
+		//adm.Login("andre@gmail.com", "senha"); // fazer login necessita de email e senha
 		//adm.findOne(1);//necessario o id do admin;
 		//	System.out.println(adm.findOne(1));
 		//Administrador list[] = adm.findAll(1); // necessario informa a pagina obs paginas maior que 0
@@ -88,6 +88,8 @@ public class Sispac {
 		
 		
 		//FindAluno alu = new FindAluno();
+		//alu.Login("teste@gmail", "senha");
+		//System.out.println(alu.Login("teste@gmail", "senha"));
 		///System.out.println(alu.findOne(1));// necessario informa o id_aluno
 		/*Aluno list2[] = alu.findAll(1);// necessario informa a pagina obs paginas maior que 0
 		for(int i =0 ; i<10 ; i++) {

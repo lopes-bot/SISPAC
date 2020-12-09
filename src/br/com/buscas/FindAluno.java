@@ -75,5 +75,30 @@ public class FindAluno {
 		return getAlu();
 	}
 	
+	public Aluno Login(String email , String senha) {
+		String sql = "SELECT * FROM aluno WHERE email= '"+email+"' AND senha= '"+senha+"';";
+		ConnectDb con = new ConnectDb(sql);		
+		PreparedStatement ps = con.getPs();
+		try {
+			
+			ResultSet result =	ps.executeQuery();
+			
+			
+			result.next();
+				Aluno alu = new Aluno(
+						result.getInt("id_aluno"),
+						result.getString("cpf"),
+						result.getString("nome"),
+						result.getString("email"),
+						result.getString("senha"));	
+				
+				setAlu(alu);
+				ps.close();
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+		return getAlu();
+		
+	}
 
 }
