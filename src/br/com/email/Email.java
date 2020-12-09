@@ -1,5 +1,12 @@
 package br.com.email;
 
-public class Email {
+import org.apache.commons.mail.SimpleEmail;
 
+public class Email {
+	private String meuEmail;
+	private String minhaSenha;
+	
+	SimpleEmail email = new SimpleEmail();
+	
+	
 }
