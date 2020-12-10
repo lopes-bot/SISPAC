@@ -1,6 +1,5 @@
 package br.com.pdf;
 
-
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.sql.PreparedStatement;
@@ -33,14 +32,14 @@ public class Gerar {
               document.open();
               Font f = new Font(Font.FontFamily.COURIER, 20, Font.BOLD);
               Font font = FontFactory.getFont(FontFactory.TIMES, 14, Font.NORMAL);
-              // adicionando um parágrafo no documento
+              
               while(ps.getResultSet().next()) {
             	 Paragraph paragraph = new Paragraph(ps.getResultSet().getString("nomeevento"), f); 
             	 paragraph.setAlignment(Element.ALIGN_CENTER);
             	 paragraph.setSpacingAfter(40.0f);
                  document.add(paragraph);
                  
-                 Paragraph p1 = new Paragraph("Endereço do evento: " + ps.getResultSet().getString("endereco") , font);
+                 Paragraph p1 = new Paragraph("Endereï¿½o do evento: " + ps.getResultSet().getString("endereco") , font);
                  p1.setSpacingAfter(20.0f);
                  document.add( p1 );
                  
@@ -52,23 +51,23 @@ public class Gerar {
                  p3.setSpacingAfter(20.0f);
                  document.add( p3 );
                  
-                 Paragraph p4 = new Paragraph("Horário de abertura do evento: " + ps.getResultSet().getString("horainicio") , font );
+                 Paragraph p4 = new Paragraph("Horï¿½rio de abertura do evento: " + ps.getResultSet().getString("horainicio") , font );
                  p4.setSpacingAfter(20.0f);
                  document.add( p4 );
-                 //agora vai
-                 Paragraph p5 = new Paragraph("Horário de encerramento do evento: " + ps.getResultSet().getString("horafim") , font   );
+                 
+                 Paragraph p5 = new Paragraph("Horï¿½rio de encerramento do evento: " + ps.getResultSet().getString("horafim") , font   );
                  p5.setSpacingAfter(20.0f);
                  document.add( p5 );
                  
-                 Paragraph p6 = new Paragraph("Carga horária do evento: " + ps.getResultSet().getString("cargahoraria") + " hora(s)", font   );
+                 Paragraph p6 = new Paragraph("Carga horï¿½ria do evento: " + ps.getResultSet().getString("cargahoraria") + " hora(s)", font   );
                  p6.setSpacingAfter(20.0f);
                  document.add( p6 );
                  
-                 Paragraph p7 = new Paragraph("Área principal do evento: " + ps.getResultSet().getString("area") , font   );
+                 Paragraph p7 = new Paragraph("ï¿½rea principal do evento: " + ps.getResultSet().getString("area") , font   );
                  p7.setSpacingAfter(20.0f);
                  document.add( p7 );
                  
-                 Paragraph p8 = new Paragraph("Número de vagas máximas para o evento: " + ps.getResultSet().getString("vagas") + " vagas" , font   );
+                 Paragraph p8 = new Paragraph("Nï¿½mero de vagas mï¿½ximas para o evento: " + ps.getResultSet().getString("vagas") + " vagas" , font   );
                  p8.setSpacingAfter(20.0f);
                  document.add( p8 );
               }
