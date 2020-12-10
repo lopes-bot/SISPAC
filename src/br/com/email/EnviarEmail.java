@@ -12,7 +12,7 @@ public class EnviarEmail {
 		
 		SimpleEmail email = new SimpleEmail();
 		email.setHostName("smtp.gmail.com");
-		email.setSmtpPort(465);
+		email.setSmtpPort(587);
 		email.setAuthenticator(new DefaultAuthenticator(meuEmail,minhaSenha));
 		email.setSSLOnConnect(true);
 		 try {

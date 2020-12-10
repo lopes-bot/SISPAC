@@ -14,8 +14,12 @@ import br.com.delete.*;
 
 public class Sispac {
 	public static void main(String[] ags) {
+<<<<<<< HEAD
 		System.out.print("ok");
 		//MigrateUP migrates = new MigrateUP();// cria as tabelas no banco 
+=======
+		MigrateUP migrates = new MigrateUP();// cria as tabelas no banco 
+>>>>>>> master
 		//MigrateDown migrates = new MigrateDown();// remove as tabelas do banco
 
 
