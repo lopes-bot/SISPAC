@@ -55,7 +55,7 @@ public class Gerar {
                  Paragraph p4 = new Paragraph("Horário de abertura do evento: " + ps.getResultSet().getString("horainicio") , font );
                  p4.setSpacingAfter(20.0f);
                  document.add( p4 );
-                 
+                 //agora vai
                  Paragraph p5 = new Paragraph("Horário de encerramento do evento: " + ps.getResultSet().getString("horafim") , font   );
                  p5.setSpacingAfter(20.0f);
                  document.add( p5 );
