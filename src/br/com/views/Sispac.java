@@ -15,7 +15,7 @@ import br.com.delete.*;
 public class Sispac {
 	public static void main(String[] ags) {
 		//MigrateUP migrates = new MigrateUP();// cria as tabelas no banco 
-		//MigrateDown migrates = new MigrateDown();// remove as tabelas do banco
+		MigrateDown migrates = new MigrateDown();// remove as tabelas do banco
 
 
 		//Criar_admin ad = new Criar_admin(3,"79848483","senha","teste","teste@gmail.com");
