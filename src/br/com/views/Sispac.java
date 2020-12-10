@@ -15,7 +15,7 @@ import br.com.delete.*;
 public class Sispac {
 	public static void main(String[] ags) {
 		//MigrateUP migrates = new MigrateUP();// cria as tabelas no banco 
-		//MigrateDown migrates = new MigrateDown();// remove as tabelas do banco
+		MigrateDown migrates = new MigrateDown();// remove as tabelas do banco
 
 
 		//Criar_admin ad = new Criar_admin(3,"79848483","senha","teste","teste@gmail.com");
@@ -87,9 +87,9 @@ public class Sispac {
 		
 		
 		
-		FindAluno alu = new FindAluno();
+		//FindAluno alu = new FindAluno();
 		//alu.Login("teste@gmail", "senha");
-		System.out.println(alu.Login("teste@gmail", "senha"));
+		//System.out.println(alu.Login("teste@gmail", "senha"));
 		///System.out.println(alu.findOne(1));// necessario informa o id_aluno
 		/*Aluno list2[] = alu.findAll(1);// necessario informa a pagina obs paginas maior que 0
 		for(int i =0 ; i<10 ; i++) {
