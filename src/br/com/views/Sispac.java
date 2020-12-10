@@ -14,6 +14,7 @@ import br.com.delete.*;
 
 public class Sispac {
 	public static void main(String[] ags) {
+		System.out.print("ok");
 		//MigrateUP migrates = new MigrateUP();// cria as tabelas no banco 
 		//MigrateDown migrates = new MigrateDown();// remove as tabelas do banco
 
@@ -76,7 +77,7 @@ public class Sispac {
 		//FindAdmin adm = new FindAdmin();
 		//adm.Login("andre@gmail.com", "senha"); // fazer login necessita de email e senha
 		//adm.findOne(1);//necessario o id do admin;
-		//	System.out.println(adm.findOne(1));
+			//System.out.println(adm.findOne(1));
 		//Administrador list[] = adm.findAll(1); // necessario informa a pagina obs paginas maior que 0
 		/*for(int i =0 ; i<10 ; i++) {
 			if(list[i] !=null) {
