@@ -27,6 +27,7 @@ public class Evento {
 		this.cargaHoraria = cargaHoraria;
 	}
 	
+		
 	public Evento(int id_evento) {
 		this.id_evento = id_evento;
 	}
