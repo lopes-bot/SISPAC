@@ -128,6 +128,14 @@ public class Sispac {
 					}
 					
 		}*/
+		
+		/*GeradorId id = new GeradorId();
+		System.out.println(id.id_admin());
+		System.out.println(id.id_aluno());
+		System.out.println(id.id_evento());
+		System.out.println(id.id_subevento());
+		System.out.println(id.id_palestrante());
+		*/
 	}
 
 }
