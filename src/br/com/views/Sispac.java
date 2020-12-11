@@ -5,10 +5,12 @@ import br.com.editar.*;
 import br.com.Models.Administrador;
 import br.com.Models.Aluno;
 import br.com.Models.Evento;
+import br.com.Models.Subevento;
 import br.com.buscas.Filter;
 import br.com.buscas.FindAdmin;
 import br.com.buscas.FindAluno;
 import br.com.buscas.FindEvento;
+import br.com.buscas.FindSubevento;
 import br.com.criar.*;
 import br.com.delete.*;
 
@@ -25,9 +27,9 @@ public class Sispac {
 				"Ufersa campus pdf","10/05/2021",
 				"15/10/2021","10:00","17:00","tecnologia","110","200");
 		*/
-		/*Criar_subevento sub = new Criar_subevento(1,1,"10","palestra sobre computadores modernos"
-				,"Ufersa campus pdf","10:25","11:25","10/05/2021","15");*/
-	
+		/*Criar_subevento sub = new Criar_subevento(1,2,"10","palestra sobre computadores modernos"
+				,"Ufersa campus pdf","10:25","11:25","10/05/2021","15");
+		 */
 		//Criar_palestrante pale = new Criar_palestrante(1,"Jose da silva","silva@gmail.com","(88)99587-4567");
 		//gerencia palestrante tem que ser criado  depois de subevento e palestrante
 		//Criar_gerenciaPalestrante gp = new Criar_gerenciaPalestrante(1,1);
@@ -111,13 +113,21 @@ public class Sispac {
 					
 		}
 		*/
-		Filter eve = new Filter();
+		/*Filter eve = new Filter();
 		System.out.println(eve.findNome("Ecop"));
 		System.out.println(eve.findEdereco("Ufersa campus pdf"));
 		System.out.println(eve.findArea("tecnologia"));
-		System.out.println(eve.findData("10/05/2021"));
+		System.out.println(eve.findData("10/05/2021"));*/
 		
-		
+		/* FindSubevento sub = new FindSubevento();
+		 System.out.println(sub.findOne(1,1));// necessario informa o id_aluno
+		 Subevento list3[] =  sub.findAll(1, 1);// necessario informa a pagina obs paginas maior que 0
+				for(int i =0 ; i<10 ; i++) {
+					if(list3[i] !=null) {
+						System.out.println(list3[i]);
+					}
+					
+		}*/
 	}
 
 }
