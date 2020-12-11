@@ -5,6 +5,7 @@ import br.com.editar.*;
 import br.com.Models.Administrador;
 import br.com.Models.Aluno;
 import br.com.Models.Evento;
+import br.com.buscas.Filter;
 import br.com.buscas.FindAdmin;
 import br.com.buscas.FindAluno;
 import br.com.buscas.FindEvento;
@@ -15,10 +16,10 @@ import br.com.delete.*;
 public class Sispac {
 	public static void main(String[] ags) {
 		//MigrateUP migrates = new MigrateUP();// cria as tabelas no banco 
-		MigrateDown migrates = new MigrateDown();// remove as tabelas do banco
+		//MigrateDown migrates = new MigrateDown();// remove as tabelas do banco
 
 
-		//Criar_admin ad = new Criar_admin(3,"79848483","senha","teste","teste@gmail.com");
+		//Criar_admin ad = new Criar_admin(5,"79845483","senhad","tested","tesdte@gmail.com");
 		//Criar_aluno al = new Criar_aluno(2,"07547646","joao teste","teste@gmail","senha");
 		/*Criar_evento ev = new Criar_evento(3,"Ecop3",
 				"Ufersa campus pdf","10/05/2021",
@@ -110,6 +111,13 @@ public class Sispac {
 					
 		}
 		*/
+		Filter eve = new Filter();
+		System.out.println(eve.findNome("Ecop"));
+		System.out.println(eve.findEdereco("Ufersa campus pdf"));
+		System.out.println(eve.findArea("tecnologia"));
+		System.out.println(eve.findData("10/05/2021"));
+		
+		
 	}
 
 }
